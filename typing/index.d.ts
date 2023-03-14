@@ -1,5 +1,8 @@
-// export type SquareType = {
-//   color: string
-//   position: number[]
-//   piece: any
-// }
+export type SquareType = {
+  isWhite: boolean
+}
+
+export type ChessPieceType = {
+  piece: number
+  color: string
+}

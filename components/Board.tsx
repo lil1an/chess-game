@@ -1,13 +1,20 @@
 import React from 'react'
 import Square from './Square'
 
-type BoardProps = {
-  board: number[][]
-}
+const Board = () => {
+  let board = [
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+  ]
 
-const Board = ({ board }: BoardProps) => {
   return (
-    <section>
+    <div>
       {board.map((row, rowIndex) => (
         <div className='flex flex-row' key={rowIndex}>
           {row.map((square, colIndex) => (
@@ -18,7 +25,7 @@ const Board = ({ board }: BoardProps) => {
           ))}
         </div>
       ))}
-    </section>
+    </div>
   )
 }
 

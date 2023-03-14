@@ -1,16 +1,13 @@
 import React from 'react'
+import { SquareType } from '../typing'
 
-type SquareProps = {
-  isWhite: boolean
-}
-
-const Square = ({ isWhite }: SquareProps) => {
+const Square = ({ isWhite }: SquareType) => {
   return (
     <div
       style={{
-        backgroundColor: isWhite ? 'white' : 'black',
-        width: '40px',
-        height: '40px',
+        backgroundColor: isWhite ? '#f4f4f5' : '#4b5563',
+        width: '65px',
+        height: '65px',
       }}
     />
   )

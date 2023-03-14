@@ -1,25 +1,18 @@
 import React from 'react'
 import Board from '../components/Board'
 import Square from '../components/Square'
+import '../styles/global.css'
 
 function App() {
-  const board = [
-    [0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0],
-  ]
 
   return (
-    <div className='border'>
-      <div className='border flex justify-center'>
-        <h1 className='text-xl'>Chess Game</h1>
+    <div>
+      <div className=' flex justify-center'>
+        <h1 className='text-4xl font-extrabold mt-6'>Chess Game</h1>
       </div>
-      <Board board={board} />
+      <div className='flex justify-center mt-8'>
+        <Board />
+      </div>
     </div>
   )
 }
