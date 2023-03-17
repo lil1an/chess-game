@@ -8,9 +8,9 @@ function App() {
   return (
     <div>
       <div className=' flex justify-center'>
-        <h1 className='text-4xl font-extrabold mt-6'>Chess Game</h1>
+        <h1 className='text-4xl font-extrabold mt-8'>Chess Game</h1>
       </div>
-      <div className='flex justify-center mt-8'>
+      <div className='flex justify-center mt-10'>
         <Board />
       </div>
     </div>

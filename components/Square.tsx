@@ -1,15 +1,22 @@
-import React from 'react'
 import { SquareType } from '../typing'
+import ChessPiece from './ChessPiece'
 
-const Square = ({ isWhite }: SquareType) => {
+const Square = ({ isWhite, piece }: SquareType) => {
+  let imagePath = piece ? `../public/assets/${piece}.png` : undefined
+
   return (
     <div
       style={{
-        backgroundColor: isWhite ? '#f4f4f5' : '#4b5563',
+        backgroundColor: isWhite ? '#ebecd0' : '#779556',
         width: '65px',
         height: '65px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
       }}
-    />
+    >
+      {piece && <ChessPiece piece={piece} />}
+    </div>
   )
 }
 
